@@ -3379,9 +3379,47 @@ input, select, textarea {
 
 		#content {
 			background-color:white;
-			height:736px;
+			height:1200px;
 			left:0;
 			position:relative;
+		}
+
+		@keyframes AutoSlide {
+			0%, 15%, 100% {
+				left: 0px; /*1ère image*/
+			}
+			35%, 50% {
+				left: -150px; /*2ème image*/
+			}
+			70%, 85% {
+				left: -300px; /*3ème image*/
+			}
+		}
+
+		#slideshow {
+			position: relative;
+			height: 100%;
+			width:100%;
+			margin:  20px auto;
+			overflow: auto;
+		}
+		#sContent li {
+			display: inline;
+		}
+
+		#sContent {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 450px;
+			margin: 0;
+			padding: 0;
+
+			/*CSS3 keyframes animation*/
+			animation-name: AutoSlide;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
 		}
 
 		.card {
