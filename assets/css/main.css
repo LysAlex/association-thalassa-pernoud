@@ -3398,8 +3398,8 @@ input, select, textarea {
 
 		#slideshow {
 			position: relative;
-			height: 100%;
-			width:100%;
+			height: 50%;
+			width:50%;
 			margin:  20px auto;
 			overflow: auto;
 		}
