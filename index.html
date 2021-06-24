@@ -11,6 +11,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+		@media screen and (min-width: 1680px) {
+
+			#mobile {
+				display: none;
+			}
+			#mobileMenu {
+				display:none;
+			}
+			body {
+				margin-right:45em;
+				background-image: url("images/group106.png");
+				width:1680px;
+				height:800px;
+			}
+
+		}
+
+		@media screen and (min-width: 1280px) {
+
+			#mobile {
+				display: none;
+			}
+			#mobileMenu {
+				display:none;
+			}
+			body {
+				margin-right:45em;
+				background-image: url("images/group106.png");
+				background-size: cover;
+
+			}
+		}
+
+		@media screen and (max-width: 738px) {
+
+			#desktop {
+				display: none;
+			}
+		}
+
+	</style>
 	<body class="is-preload" style="background-color: #1B2346">
 
 		<!-- Wrapper -->
@@ -19,16 +61,17 @@
 				<!-- Header -->
 					<header id="header">
 						<a href="index.html"><img src="images/logoThalassa.png" style="height:90%"> </a>
-						<nav class="links">
+						<nav class="links" style="text-align:right;color:#FAF6F1">
 							<ul>
-								<li><a href="#">Lorem</a></li>
-								<li><a href="#">Ipsum</a></li>
-								<li><a href="#">Feugiat</a></li>
-								<li><a href="#">Tempus</a></li>
-								<li><a href="#">Adipiscing</a></li>
+								<li><a href="#">Nous rejoindre</a></li>
+								<li><a href="#">Calendrier des événements</a></li>
+								<li><a href="#">Nos partenaires</a></li>
+								<li><a href="#">Dons</a></li>
+								<li><a href="#">Galerie</a></li>
+								<li><a href="#">Connexion</a></li>
 							</ul>
 						</nav>
-						<nav class="main">
+						<nav class="main" id="mobileMenu">
 							<ul>
 								<li class="search">
 									<a class="fa-search" href="#search">Search</a>
@@ -94,6 +137,7 @@
 					</section>
 
 				<!-- Main -->
+				<div id="mobile">
 					<div id="container">
 						<p style="color:white;font-size:28px;margin-top:2em; margin-left:1em">Plongez au coeur d'expériences <b style="color:white">inoubliables</b>
 							avec l'association <br /><b style="color:white">Thalassa-Pernoud</b></p>
@@ -182,13 +226,27 @@
 						</div>
 					</div>
 
-				<section id="footer" style="text-align: center">
-					<ul class="icons">
-						<li><a href="https://twitter.com/ThalassaOff?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon brands fa-twitter" style="color:#FC6D4E"><span class="label">Twitter</span></a></li>
-						<li><a href="https://fr-fr.facebook.com/ThalassaOff/" class="icon brands fa-facebook-f" style="color:#FC6D4E"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/thalassaoff/?hl=fr" class="icon brands fa-instagram" style="color:#FC6D4E"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.youtube.com/user/ThalassaOfficiel" class="icon solid fa-youtube" style="color:#FC6D4E"><span class="label">Youtube</span></a></li>
-					</ul>
+					<section id="footer" style="text-align: center">
+						<ul class="icons">
+							<li><a href="https://twitter.com/ThalassaOff?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon brands fa-twitter" style="color:#FC6D4E"><span class="label">Twitter</span></a></li>
+							<li><a href="https://fr-fr.facebook.com/ThalassaOff/" class="icon brands fa-facebook-f" style="color:#FC6D4E"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/thalassaoff/?hl=fr" class="icon brands fa-instagram" style="color:#FC6D4E"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.youtube.com/user/ThalassaOfficiel" class="icon solid fa-youtube" style="color:#FC6D4E"><span class="label">Youtube</span></a></li>
+						</ul>
+					</section>
+				</div>
+
+				<section id="desktop">
+					<p style="color:white;font-size:28px; margin-left:1em">Plongez au coeur d'expériences <b style="color:white">inoubliables</b>
+						<br />avec l'association <b style="color:white">Thalassa-Pernoud</b></p>
+					<p style="color:white;margin-left:2em;">Faites de nouvelles rencontres et découvrez le monde marin au <br />sein d’une communauté intergénérationnelle !</p>
+
+					<div style="text-align:center;">
+						<button style="margin-bottom: 1em; background-color: #FC6D4E">Participer à un événement</button>
+						<br />
+						<button><span style="color:#FC6D4E; text-decoration: underline; text-decoration-color: #FC6D4E;">Organiser un évenement</button>
+					</div>
+
 				</section>
 
 
